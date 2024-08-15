@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Advanced Navbar</title>
+    <style>
+        /* Reset some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        ul.nav-links {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        ul.nav-links li {
+            position: relative;
+        }
+
+        ul.nav-links li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+        }
+
+        ul.nav-links li a:hover {
+            background-color: #555;
+        }
+
+        /* Dropdown menu */
+        ul.nav-links li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            padding: 10px;
+            top: 40px;
+            left: 0;
+            width: 150px;
+        }
+
+        .dropdown a {
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        .dropdown a:hover {
+            background-color: #555;
+        }
+
+        /* Search bar */
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #555;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #777;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            ul.nav-links {
+                display: none;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar-toggle {
+                display: block;
+                background-color: #444;
+                padding: 10px;
+                cursor: pointer;
+                color: white;
+                border: none;
+            }
+
+            .navbar-toggle:hover {
+                background-color: #555;
+            }
+
+            .navbar-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="navbar-container">
+        <div class="logo">Resume</div>
+        <button class="navbar-toggle" onclick="toggleNav()">☰</button>
+        <ul class="nav-links">
+            <li><a href="Home1.html">Home</a></li>
+            <li>
+                <a href="#">Curriculum Vitae</a>
+                <div class="dropdown">
+                    <a href="Skills.html">Skills</a>
+                    <a href="WorkSkills.html">Work Skills</a>
+                    <a href="Education.html">Education</a>
+                    <a href="Accompleshments.html">Accomplishments</a>
+                </div>
+            </li>
+            <li><a href="certifcates.html">Certificates</a></li>
+            <li><a href="Training.html">Traning</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Go</button>
+        </div>
+    </div>
+</nav>
+
+<script>
+    function toggleNav() {
+        const navLinks = document.querySelector('.nav-links');
+        if (navLinks.style.display === 'flex') {
+            navLinks.style.display = 'none';
+        } else {
+            navLinks.style.display = 'flex';
+        }
+    }
+    
+</script>
+    <h1 style="padding-top: 85px;"> Work Skills</h1>
+    <p><hr></p>
+    <style>
+      p {
+        margin-bottom: 20px; /* Adjust the value to increase or decrease the space */
+      }
+    </style>
+    <b>2024-01 - Current: Sales Manager</b>
+   <p><i> Best Life Physiotherapy, Cairo, Egypt</i></p> 
+      <p><hr></p>
+     
+      • Developed and implemented effective sales strategies and led
+      nationwide sales team members to achieve sales targets 11M EP in 2024 in
+      Cairo</p>
+      <p>• Forecasted sales and established processes to achieve sales objectives
+      and related metrics.</p>
+      <p>• Managed national sales programs, supervised 7 sales representatives and
+      evaluated KPIs for promotional opportunities.
+      <p></p>• Established and maintained budgets, quotas and regional territories for
+      team members to drive consistent growth.
+      <p></p>• Negotiated and closed agreements with large customers and monitored
+      and analyzed performance metrics.
+      <p></p>• Analyzed industry trends to maintain competitive edge in pricing
+      strategies and product offerings.
+      <p></p>• Established high-performance culture by setting clear expectations,
+      providing ongoing feedback, and rewarding top performers.
+      <p></p>• Managed national sales programs, supervised 8 sales representatives and
+      evaluated KPIs for promotional opportunities.
+      <p></p>• Developed and implemented effective sales strategies and led
+      nationwide sales team members to achieve sales targets.
+      <p><hr></p>
+      <b>2023-01 - 2023-03:</b> National Sales Manager
+     <p> <i>Alkholi Group, Riyadh, Saudi Arabia </i></p>
+      <p><hr></p>
+      <p></p>• Developed and implemented effective sales strategies and led
+      nationwide sales team members to achieve sales targets.
+      <p></p>• Streamlined internal processes for improved communication between
+      departments, increasing operational efficiency.
+      <p></p>• Expanded market share to 5% by identifying new business opportunities
+      and executing targeted marketing strategies.
+      <p></p>• Achieved consistent year-over-year growth by setting ambitious yet
+      attainable targets for sales organization based on historical performance
+      data.
+      <p></p>• Negotiated profitable contracts with key clients, securing long-term
+      business relationships built on mutual trust and collaboration.
+      <p></p>• Optimized sales territories to maximize coverage and increase efficiency,
+      positively impacting overall revenue growth.
+      <p><hr></p>
+      <b>2020-10 - 2022-09: Head of Sales</b>
+      <p><i>Johnson & Johnson, Jeddah, Saudi Arabia</i></p>
+      <p><hr></p>
+      <p></p>• Streamlined sales processes, resulting in enhanced efficiency and
+      increased productivity to achieve annual target 138M SR by 2021 and
+      145M SR in 2022
+      <p></p>• Developed strong client relationships for improved customer satisfaction
+      and repeat business. 
+      .
+      <p></p>• Optimized Contract and spending strategies by 7% and by monitoring
+      competitor activities, analyzing market trends, and considering internal
+      cost structures for profitability maximization by 32% total spend.
+      <p></p>• Implemented effective CRM tools to track leads, maintain accurate
+      customer data, and optimize sales process.
+      <p></p>• Managed key accounts effectively, ensuring ongoing satisfaction while
+      identifying upsell opportunities to drive additional revenue growth.
+      <p></p>• Negotiated contracts with major clients, securing long-term partnerships
+      that generated significant revenue streams.
+      <p></p>• Conducted regular territory analyses to ensure optimal resource
+      allocation and maximum coverage of target markets.
+      <p></p>• Established robust pipeline of prospects through diligent prospecting
+      efforts, leading to consistent increases in new business opportunities.
+      <p></p>• Launched new products (Og-x and Maui) successfully by collaborating
+      with cross-functional teams and executing comprehensive go-to-market
+      plans.
+      <p></p>• Increased sales revenue by implementing innovative marketing strategies
+      and optimizing team performance.
+      <p></p>• Expanded market share with targeted sales initiatives and strategic
+      partnerships.
+      <p></p>• Led high-performing sales team to consistently exceed quotas and
+      achieve top rankings within Johnson & Johnson.
+      <p></p>• Grew sales and boosted profits, applying proactive management
+      strategies and enhancing sales training.
+      <p><hr></p>
+      <b>2015-07 - 2020-09:</b> Regional Sales Manager
+      <p><i>Johnson & Johnson, Jeddah, Saudi Arabia</p></i>
+      <p><hr></p>
+      <p></p>• Developed and maintained positive relationships with clients in western
+      region traditional trade and Whole sales.
+      <p></p>• Organized regular sales meetings, providing comprehensive updates on
+      market trends, competitor analysis, and new product developments.
+      <p></p>• Managed team of 17 regional sales representatives and supervisors
+      <p></p>• And consistently achieved high sales targets 65M SR annually in 2015, 72M
+      in 2016, 70M 2017, 77M in 2018 and 84M SR in 2019)
+      <p></p>• Increased regional sales by implementing strategic marketing plans and
+      nurturing key client relationships.
+      <p></p>• Expanded market share within Western region by identifying growth
+      opportunities and collaborating with cross-functional teams.
+      <p></p>• Achieved regional sales objectives by coordinating sales team,
+      developing successful strategies, and servicing accounts to strengthen
+      business relationships.
+      <p></p>• Cultivated strong partnerships with distributors and retailers to increase
+      product visibility and drive sales volume.
+      <p></p>• Streamlined sales processes to improve efficiency, resulting in increased
+      productivity and overall revenue growth.
+      <p></p>• Generated detailed sales reports and forecasts to analyze performance
+      and track progress. 
+      .
+      <p>• Finalized sales contracts with high-value customers.
+        <p><hr></p>
+      <b>2015-01 - 2015-06:</b> Area Sales Manager Johnson & Johnson
+      <p> </i>  Dammam, Saudi Arabia</i> </p>
+      <p><hr></p>
+      <p>• Managed successful sales team (7 sales representatives), consistently
+      achieving and exceeding monthly sales targets.
+      <p>• Expanded market share (by 12% in OTC and 5% in Consumer line) through
+      effective prospecting, market visit, and negotiation skills.
+      <p>• Exceeded targets (50 M SR for Aldabra PH and 6M SR for OTC line) by
+      building, directing, and motivating high-performing sales team.
+      <p>• Established strong relationships with key clients (Aldawaa, Sub agents,
+      Tenders and Class A Hospitals), resulting in increased customer retention
+      and satisfaction.
+      <p>• Established strong relationships with major accounts and key decisionmakers to increase sales in designated for eastern region.
+      <p>• Enhanced team performance by providing ongoing coaching, training,
+      and mentoring to sales representatives.
+      <p>• Helped team stay productive and focused on higher-value tasks to
+      improve sales efficiency.
+      <p>• Analyzed market trends and competitor activity to identify new business
+      opportunities and areas for growth.
+      <p>• Forecasted sales and established processes to achieve sales objectives
+      and related metrics.
+      <p>• Launched new products successfully within Eastern region by executing
+      well-designed launch plans tailored specifically for each product line.
+      <p>• Increased sales revenue by developing and implementing strategic sales
+      plans for Eastern region.
+      <p>• Executed proven strategies to hit sales quota and help company achieve
+      goals.
+      <p>• Grew businesses by adopting market expansion strategy to serve different
+      customer needs.
+      <p><hr></p>
+      <b>2012-07 - 2014-12:</b> Sales Supervisor
+      <p><i>Johnson & Johnson, Dammam, Saudi Arabia</i></p>
+      <p><hr></p>
+      <p>• Achieved sales targets consistently through regular monitoring of team
+      performance and adjusting strategies accordingly.
+      <p>• Trained team members in successful strategies to meet operational and
+      sales targets.
+      <p>• Worked jointly with team members to assist with closing sales, cross-selling
+      and upselling of products and services.
+      <p>• Developed strong relationships with key clients, resulting in repeat business
+      and increased revenue.
+      <p>• Supervised staff successfully, utilizing effective communication and
+      dynamic interpersonal skills.
+      <p>• Organized weekly team meetings to discuss progress, challenges, and
+      opportunities for growth.
+      <p>• Analyzed sales data to set quotas and assess potential areas of growth. 
+      .
+      <p>• Boosted sales by implementing effective training programs for new and
+      existing employees.
+      <p>• Mentored sales team in applying effective sales techniques and
+      delivering top-notch customer service.
+      <p>• Exceeded sales goals and accomplished business objectives by inspiring
+      staff and promoting target products.
+      <p>• Managed budgets effectively while maintaining proper inventory levels
+      throughout the year ensuring optimal profitability without compromising
+      service quality.
+      <p>• Generated detailed reports highlighting team achievements as well as
+      areas requiring further attention or improvement efforts.
+      <p> • Handled escalated customer issues promptly, ensuring timely resolution
+      and high levels of client satisfaction.
+      <p>• Created innovative sales strategies, leading to improved market share
+      and visibility for the company’s products.
+      • Effectively coached team members to reach weekly and monthly sales
+      goals.
+      <p>• Collaborated with other departments to ensure seamless communication
+      and smooth workflow across teams.
+      <p> • Established objectives to offer team members clear roadmap to help
+      company achieve overall goals.
+      <p><hr></p>
+      <b>2004-01 - 2012-06:</b> Sales Representative
+      <p><i>Johnson & Johnson, Jeddah, Saudi Arabia</i></p>
+      <p><hr></p>
+      <p>• Enhanced client satisfaction by addressing concerns promptly and
+      providing exceptional Market visit by 15 daily doctor Visit.
+      <p> • Developed and implemented sales strategies to increase profits.
+        <p> • Trained and mentored new sales representatives, 4 newly joined medical
+      sales reps to team
+      <p>• Used customer insights to develop innovative sales strategies to increase
+      sales.
+      <p>• Generated weekly and monthly reports on sales performance to provide
+      recommendations to meet sales goals, by daily, monthly visit report and
+      achievement reports
+      <p>• Retained excellent client satisfaction ratings through outstanding service
+      delivery.
+      <p>• Managed customer accounts to secure customer satisfaction and repeat
+      business.
+      <p>• Developed and implemented marketing plans to increase brand
+      awareness and drive sales.
+      <p>• Utilized CRM software to manage client information, track leads, and
+      monitor sales progress efficiently.
+      <p>• Streamlined sales processes by identifying inefficiencies and implementing
+      improvements for enhanced productivity.
+      <p>• Optimized territory coverage by strategically planning routes for maximum
+      efficiency in meeting clients face to face, daily calls to doctors by
+      average 15 calls per day. 
+      .
+      <p>• Developed and maintained comprehensive understanding of products,
+      services and competitors to enhance sales presentations.
+      <p><hr></p>
+      <b>2002-04 - 2003-12 :</b>Pharmacy Manager
+     <p><i>Nahdi Medical, Jeddah, Saudi Arabia</i></p> 
+      <p><hr></p>
+      <p>• Monitored and managed pharmacy staff performance to maximize
+      productivity and customer satisfaction.
+      <p>• Led high-performing team of pharmacists and technicians to deliver
+      exceptional patient care and service.
+      <p>• Discussed medical histories with patients in effort to provide most effective
+      medical advice.
+      <p>• Developed strong relationships with healthcare providers, ensuring
+      seamless coordination of care for patients.
+      <p>• Enhanced patient safety with thorough drug utilization reviews and
+      monitoring potential drug interactions.
+      <p>• Enforced compliance with pharmacy regulations and maintained up-todate records of all medications dispensed.
+      <p>• Recommended OTC devices or medication options to help mitigate
+      individual symptoms.
+      <p>• Increase pharmacy sales by 30% to be 155K SR monthly. 

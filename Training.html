@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Advanced Navbar</title>
+    <style>
+        /* Reset some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        ul.nav-links {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        ul.nav-links li {
+            position: relative;
+        }
+
+        ul.nav-links li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+        }
+
+        ul.nav-links li a:hover {
+            background-color: #555;
+        }
+
+        /* Dropdown menu */
+        ul.nav-links li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            padding: 10px;
+            top: 40px;
+            left: 0;
+            width: 150px;
+        }
+
+        .dropdown a {
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        .dropdown a:hover {
+            background-color: #555;
+        }
+
+        /* Search bar */
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #555;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #777;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            ul.nav-links {
+                display: none;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar-toggle {
+                display: block;
+                background-color: #444;
+                padding: 10px;
+                cursor: pointer;
+                color: white;
+                border: none;
+            }
+
+            .navbar-toggle:hover {
+                background-color: #555;
+            }
+
+            .navbar-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="navbar-container">
+        <div class="logo">Resume</div>
+        <button class="navbar-toggle" onclick="toggleNav()">☰</button>
+        <ul class="nav-links">
+            <li><a href="Home1.html">Home</a></li>
+            <li>
+                <a href="#">Curriculum Vitae</a>
+                <div class="dropdown">
+                    <a href="Skills.html">Skills</a>
+                    <a href="WorkSkills.html">Work Skills</a>
+                    <a href="Education.html">Education</a>
+                    <a href="Accompleshments.html">Accomplishments</a>
+                </div>
+            </li>
+            <li><a href="certifcates.html">Certificates</a></li>
+            <li><a href="Training.html">Traning</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Go</button>
+        </div>
+    </div>
+</nav>
+
+<script>
+    function toggleNav() {
+        const navLinks = document.querySelector('.nav-links');
+        if (navLinks.style.display === 'flex') {
+            navLinks.style.display = 'none';
+        } else {
+            navLinks.style.display = 'flex';
+        }
+    }
+    
+</script>
+<h1 style="padding-top: 85px;">Traning(Selling Skills)</h1>
+ <p><b> <hr></b></p>
+ <style>
+  p {
+    margin-bottom: 20px; /* Adjust the value to increase or decrease the space */
+  }
+</style>
+<div class="box">
+    <h2><b>About the Trainer</b></h2>
+  </div>
+
+
+ 
+ 
+ <p> <b> Dr. Alsayed Khalil</b></p>
+ 
+
+     <p>As a freelance trainer with over 18 years of
+      invaluable experience gained at Johnson &
+      Johnson and other multi-national companies ,
+      where his journey began as a dedicated sales
+      executive and culminated as a proficient
+      national sales manager and trainer for both
+      executives and managers. His tenure
+      equipped him with a deep understanding of
+      sales dynamics and effective managerial
+      strategies, which he now imparts to aspiring
+      professionals seeking to thrive in the
+      competitive sales landscape.</p>
+   <p> <b> <hr></b></p>
+      <p><h2> <b> Objectives</b></h2></p>
+      <ul>
+        <li> New model for sales process</li>
+        <li> Sharpening selling skills for
+            salespeople</li>
+        <li> Preparing the new sales
+            people for the market</li>
+        <li> Understanding the customer
+            behavior style and build long
+            relationships with clients</li>
+      </ul>
+      <p> <b> <hr></b></p>
+      <p><h2> <b> Audience</b></h2></p>
+
+      <ul> 
+        <li>  Sales executives in any
+            industry</li>
+        <li>Medical sales executives</li>
+        <li> Newly graduated students
+            entering the sales</li>
+      </ul>
+      <p><b><hr></b></p>
+      <p><h2> <b> Course Content</b></h2></p>
+      <ul>
+      <li>Introduction about sales process
+        meanings and myths about sales
+        process</li>
+      <li>Traits for highly successful sales
+        parson</li>
+      <li>Understanding different behavioral
+        styles for customers and how to
+        classify them</li>
+      <li>Understanding salesmen behavioral
+        style and how to deal with each
+        customer style</li>
+      <li>Sales call steps by AIDinc system
+        and understanding each step
+        according to each customer
+        behavior style</li>
+      <li>Successful negotiation with
+        customers</li>
+      <li>Successful closing the sales call</li>
+      <li>Understanding the GAP between
+        sales man offering and customers
+        needs to win the call and
+        negotiations</li>
+      <li>5 days course each session 4 hours
+        Interactive training sessions</li>
+      <li>Training manual and ppt</li>
+      <li>After training support</li>
+      <li>Rehearsal sales call and session</li>
+      </ul>
